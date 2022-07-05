@@ -176,6 +176,8 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s ease-in-out;
+  border: #000 solid 1px;
+  box-shadow: 5px 5px 15px 5px var(--color-primary);
   filter: grayscale(100%);
 }
 .header-content .left-header .image img:hover {
