@@ -270,7 +270,7 @@ section {
     }
 }
 .about-stats {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     .progress-bars {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -305,6 +305,19 @@ section {
                     }
                     .python {
                         width: 80%;
+                        &:hover {
+                            cursor: default;
+                        }
+                    }
+                    .javascript {
+                        width: 90%;
+                        &:hover {
+                            cursor: default;
+                        }
+                    }
+
+                    .networking {
+                        width: 60%;
                         &:hover {
                             cursor: default;
                         }

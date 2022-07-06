@@ -263,7 +263,7 @@ section {
 }
 
 .about-stats {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 .about-stats .progress-bars {
   display: grid;
@@ -304,6 +304,18 @@ section {
   width: 80%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python:hover {
+  cursor: default;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .javascript:hover {
+  cursor: default;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .networking {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .networking:hover {
   cursor: default;
 }
 
