@@ -200,6 +200,18 @@ section {
   line-height: 2rem;
 }
 
+/*About section*/
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+}
+.about-container .right-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
 /* independent components */
 .btn-cnt {
   display: flex;
