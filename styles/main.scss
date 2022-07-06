@@ -250,3 +250,30 @@ section {
         }
     }
 }
+
+.main-title {
+    text-align: center;
+    
+    h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        position: relative;
+        text-transform: uppercase;
+        
+        span {
+            color: var(--color-secondary);
+        }
+        .bg-txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: var(--color-gray5);
+            transition: all .4s ease-in-out;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            font-weight: 800;
+            font-size: 6.3rem;
+        }
+
+    }
+}

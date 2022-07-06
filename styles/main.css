@@ -244,4 +244,28 @@ section {
   background-color: var(--color-secondary);
   transform: translateX(0);
   transition: all 0.4s ease-in-out;
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+.main-title h2 .bg-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-gray5);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 6.3rem;
 }/*# sourceMappingURL=main.css.map */
