@@ -399,11 +399,8 @@ section {
             }
             p {
                
-                color: var(--color-gray2);
-                
+                color: var(--color-gray2);   
             }
-        
-
     }
 }
 
@@ -550,6 +547,74 @@ section {
             }
         }
        
+    }
+}
+
+// Contact section
+
+.contact-content-con {
+    display: flex;
+    padding-top: 3.5rem;
+
+    .left-contact {
+        flex: 2;
+
+        h4 {
+            font-size: 2rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+        p {
+            margin: 1rem 0;
+            line-height: 2rem;
+        }
+        .contact-info {
+            .contact-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0.3rem 0 !important;
+                    padding: 0 !important
+                }
+            }
+        }
+    }
+    .right-contact {
+        flex: 3;
+        margin-left: 2rem;
+        .input-control {
+            margin: 1.5rem 0;
+            input, textarea {
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: 0.8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-gray5);
+                width: 100%;
+                color: var(--color-gray5);
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+            }
+        }
+        .ic2 {
+            display: flex;
+            :last-child {
+                margin-left: 1rem;
+            }
+        }
+        .submit-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            
+        }
     }
 }
 /* independent components */
