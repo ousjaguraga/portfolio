@@ -552,11 +552,12 @@ section {
 
 // Contact section
 
-.contact-content-con {
+.contact-content-container {
     display: flex;
+    flex-direction: column-reverse;
     padding-top: 3.5rem;
 
-    .left-contact {
+    .bottom-contact {
         flex: 2;
 
         h4 {
@@ -581,7 +582,7 @@ section {
             }
         }
     }
-    .right-contact {
+    .top-contact {
         flex: 3;
         margin-left: 2rem;
         .input-control {
