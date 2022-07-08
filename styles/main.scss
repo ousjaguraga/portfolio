@@ -552,36 +552,50 @@ section {
 
 // Contact section
 
-.contact-content-con {
+.contact-content-container {
     display: flex;
+    flex-direction: column-reverse;
     padding-top: 3.5rem;
 
-    .left-contact {
+    .bottom-contact {
+      
         flex: 2;
-
+        display: flex;
+        justify-content: space-around;
+        align-items: row;
+        flex-direction: column;
+        margin: 3.8rem;
+        
         h4 {
-            font-size: 2rem;
-            margin-top: 1rem;
-            text-transform: uppercase;
-        }
-        p {
-            margin: 1rem 0;
-            line-height: 2rem;
+            align-self: center;
         }
         .contact-info {
-            .contact-item {
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                
+                margin: 3rem;
+            .contact-item {
                 p {
                     margin: 0.3rem 0 !important;
-                    padding: 0 !important
+                    padding: 0 !important;
+                    color: var(--color-gray3);
+                }
+                .icon {
+                    color: var(--color-secondary);
+                    font-size: 1.5rem;
+                    transition: all .4s ease-in-out;
+
+                    &:hover {
+                        //transform: scale(1.5);
+                        transform: translateX(10px);
+                        transition: all .4s ease-in-out;
+                    }
                 }
             }
         }
     }
-    .right-contact {
+    .top-contact {
         flex: 3;
         margin-left: 2rem;
         .input-control {

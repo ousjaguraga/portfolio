@@ -517,39 +517,51 @@ section {
   transition: all 0.4s ease-in-out;
 }
 
-.contact-content-con {
+.contact-content-container {
   display: flex;
+  flex-direction: column-reverse;
   padding-top: 3.5rem;
 }
-.contact-content-con .left-contact {
+.contact-content-container .bottom-contact {
   flex: 2;
-}
-.contact-content-con .left-contact h4 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  text-transform: uppercase;
-}
-.contact-content-con .left-contact p {
-  margin: 1rem 0;
-  line-height: 2rem;
-}
-.contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
+  justify-content: space-around;
+  align-items: row;
+  flex-direction: column;
+  margin: 3.8rem;
+}
+.contact-content-container .bottom-contact h4 {
+  align-self: center;
+}
+.contact-content-container .bottom-contact .contact-info {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 3rem;
 }
-.contact-content-con .left-contact .contact-info .contact-item p {
+.contact-content-container .bottom-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
   padding: 0 !important;
+  color: var(--color-gray3);
 }
-.contact-content-con .right-contact {
+.contact-content-container .bottom-contact .contact-info .contact-item .icon {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  transition: all 0.4s ease-in-out;
+}
+.contact-content-container .bottom-contact .contact-info .contact-item .icon:hover {
+  transform: translateX(10px);
+  transition: all 0.4s ease-in-out;
+}
+.contact-content-container .top-contact {
   flex: 3;
   margin-left: 2rem;
 }
-.contact-content-con .right-contact .input-control {
+.contact-content-container .top-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-container .top-contact .input-control input, .contact-content-container .top-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -564,13 +576,13 @@ section {
   color: var(--color-white);
   resize: none;
 }
-.contact-content-con .right-contact .ic2 {
+.contact-content-container .top-contact .ic2 {
   display: flex;
 }
-.contact-content-con .right-contact .ic2 :last-child {
+.contact-content-container .top-contact .ic2 :last-child {
   margin-left: 1rem;
 }
-.contact-content-con .right-contact .submit-btn-container {
+.contact-content-container .top-contact .submit-btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
