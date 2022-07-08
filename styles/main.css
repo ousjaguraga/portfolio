@@ -262,9 +262,6 @@ section {
   text-transform: uppercase;
 }
 
-.about-stats {
-  padding-bottom: 2rem;
-}
 .about-stats .progress-bars {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -323,8 +320,9 @@ section {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
-  padding: 3.5rem 0;
+  padding: 3rem 0;
   position: relative;
+  margin: 3rem;
 }
 .stat-title::before {
   content: "";
