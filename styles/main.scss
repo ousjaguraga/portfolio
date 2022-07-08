@@ -558,23 +558,24 @@ section {
     padding-top: 3.5rem;
 
     .bottom-contact {
+      
         flex: 2;
-
+        display: flex;
+        justify-content: space-around;
+        align-items: row;
+        flex-direction: column;
+        margin: 5rem;
+        
         h4 {
-            font-size: 2rem;
-            margin-top: 1rem;
-            text-transform: uppercase;
-        }
-        p {
-            margin: 1rem 0;
-            line-height: 2rem;
+            align-self: center;
         }
         .contact-info {
-            .contact-item {
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                
+                margin: 3rem;
+            .contact-item {
                 p {
                     margin: 0.3rem 0 !important;
                     padding: 0 !important

@@ -524,20 +524,21 @@ section {
 }
 .contact-content-container .bottom-contact {
   flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: row;
+  flex-direction: column;
+  margin: 5rem;
 }
 .contact-content-container .bottom-contact h4 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  text-transform: uppercase;
+  align-self: center;
 }
-.contact-content-container .bottom-contact p {
-  margin: 1rem 0;
-  line-height: 2rem;
-}
-.contact-content-container .bottom-contact .contact-info .contact-item {
+.contact-content-container .bottom-contact .contact-info {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 3rem;
 }
 .contact-content-container .bottom-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
