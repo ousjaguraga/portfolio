@@ -564,7 +564,7 @@ section {
         justify-content: space-around;
         align-items: row;
         flex-direction: column;
-        margin: 5rem;
+        margin: 3.8rem;
         
         h4 {
             align-self: center;
@@ -578,7 +578,19 @@ section {
             .contact-item {
                 p {
                     margin: 0.3rem 0 !important;
-                    padding: 0 !important
+                    padding: 0 !important;
+                    color: var(--color-gray3);
+                }
+                .icon {
+                    color: var(--color-secondary);
+                    font-size: 1.5rem;
+                    transition: all .4s ease-in-out;
+
+                    &:hover {
+                        //transform: scale(1.5);
+                        transform: translateX(10px);
+                        transition: all .4s ease-in-out;
+                    }
                 }
             }
         }
