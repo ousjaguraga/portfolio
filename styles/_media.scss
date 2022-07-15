@@ -4,8 +4,39 @@
     }
     header .right-header {
         padding: 0 !important;
+        margin-top: 10rem
+
     }
     header .left-header {
         padding: 0 !important;
     }
+    // header shape
+    .header-content .left-header .header-shape {
+        transition: all 0.4s ease-in-out;
+        width: 100%;
+        height: auto;
+        background-color: var(--color-white);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+        clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+    }
+
+    header .left-header .header-shape .image {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        margin-left: 0;
+    }
+    .btn-gparent {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        transform: translateY(0);
+    }
+    
+    
 }
