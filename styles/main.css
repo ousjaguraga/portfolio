@@ -37,7 +37,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -678,6 +678,18 @@ section {
   }
   .header-content {
     grid-template-columns: 1fr;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
+  }
+  .left-header .header-shape {
+    display: none;
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
   }
 }/*# sourceMappingURL=main.css.map */
