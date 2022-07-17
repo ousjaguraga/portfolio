@@ -19,8 +19,14 @@
     }
 
     .header-content  {
-       
+       grid-template-columns: 1fr;
+       padding-bottom: 5rem;
     }
     
+    .left-header {
+        .header-shape {
+           // display: none;
+        }
+    }
    
 }

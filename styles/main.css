@@ -676,4 +676,8 @@ section {
     width: 100%;
     background-color: var(--color-black);
   }
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
