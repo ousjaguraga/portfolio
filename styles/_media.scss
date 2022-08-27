@@ -11,7 +11,7 @@
         top: auto;
         bottom: 0;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
@@ -69,9 +69,13 @@
       grid-template-columns: 1fr;
       padding-bottom: 6rem;
    }
+   #blog {
+      overflow: hidden;
+   } 
    .blogs {
       grid-template-columns: 1fr;
       padding-bottom: 6rem;
+     
    }
    .contact-container {
     grid-template-columns: 1fr;
@@ -94,6 +98,7 @@
       a {
           margin: 2rem;
       }
+      
    }
    
    .section {
