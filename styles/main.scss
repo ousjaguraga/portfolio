@@ -261,6 +261,10 @@ section {
             line-height: 2rem;
             padding: 2rem;
             color: var(--color-gray1);
+
+            .inner-link {
+                color: var(--color-secondary);
+            }
         }
         h4 {
             font-size: 2rem;
