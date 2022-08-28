@@ -555,7 +555,10 @@ section {
     display: flex;
     flex-direction: column-reverse;
     padding-top: 3.5rem;
-
+    // hide contact form for now
+    .contact-form {
+     display: none;
+    }
     .bottom-contact {
       
         flex: 2;
