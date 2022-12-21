@@ -1,0 +1,19 @@
+// Compile the template
+const template = Handlebars.compile(`
+  <div class="blog-post">
+    <h2>{{title}}</h2>
+    <p>{{excerpt}}</p>
+    <a href="{{url}}" class="read-more">Read more</a>
+  </div>
+`);
+
+// Render the template with some data
+const data = {
+  title: 'My Blog Post',
+  excerpt: 'This is a brief summary of my blog post',
+  url: '/blog/my-post'
+};
+const html = template(data);
+
+// Insert the rendered HTML into the page
+document.getElementById('blog-posts').innerHTML = html;
