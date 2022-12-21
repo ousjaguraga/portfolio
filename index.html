@@ -9,6 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+     <!-- Include Handlebars from a CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+     
+     <script id="template" type="text/x-handlebars-template">
+       
+        {{#each blogs}}
+        <div class="blog">
+            <img src={{image}} alt="">
+            <div class="blog-text">
+                <h3 class="blog-title">{{title}}</h3>
+                <p>
+                    {{content}}
+                </p>
+            <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+        {{/each}}
+      </script>
+   
+
     <title>Ousman Jaguraga's website</title> 
    
 </head>
@@ -24,7 +45,7 @@
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, My name is <span>Ousman</span>, I am ...
+                    Hi, My name is <span>Ousman B</span>, I am ...
                 </h1>
                 <p>
                     I am a self taught Python, Javascript developer 👨🏾‍💻.
@@ -206,7 +227,7 @@
                 <div class="main-title">
                     <h2>My<span> Blog</span><span class="bg-txt">Thoughts</span></h2>
                 </div>
-                <div class="blogs">
+                <div class="blogs" id="my-blog">
                     <div class="blog">
                         <img src="images/blog1.jpg" alt="">
                         <div class="blog-text">
@@ -315,4 +336,52 @@
 
     <script src="./app.js"></script>
 </body>
+
+   
+<script type="text/javascript">
+    // Get the template from the script tag
+    const template = document.getElementById("template").innerHTML;
+  
+    // Compile the template
+    const compiledTemplate = Handlebars.compile(template);
+  
+    // Define the data object
+    const data = {
+      name: "Tesla",
+      blogs: [
+        { 
+            title : "model s", 
+            content: "Tesla model s i will own in sha Allah",
+            image: "../images/blog1.jpg"
+        },
+        { 
+            title : "model X", 
+            content: "Tesla model s i will own in sha Allah",
+            image: "../images/blog1.jpg"
+        },
+        { 
+            title : "model s", 
+            content: "Tesla model s i will own in sha Allah",
+            image: "../images/blog1.jpg"
+        },
+        { 
+            title : "model 3", 
+            content: "Tesla model s i will own in sha Allah",
+            image: "../images/blog1.jpg"
+        },
+        { 
+            title : "model y", 
+            content: "Tesla model s i will own in sha Allah",
+            image: "../images/blog1.jpg"
+        },
+      ]
+    };
+  
+    // Render the template with the data object
+    const html = compiledTemplate(data);
+  
+    // Insert the rendered HTML into the page
+    document.getElementById('my-blog').innerHTML = html;
+  </script>
+  
 </html>
